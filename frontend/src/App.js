@@ -4,10 +4,13 @@ import Footer from "./components/Footer";
 import "./assets/styles/index.css";
 import "./assets/styles/bootstrap.custom.css";
 import { Outlet } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
     <>
+      <ToastContainer />
       <Header />
       <main className="py-3">
         <Container>
